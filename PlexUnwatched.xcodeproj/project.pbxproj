@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A9C37CB1C00CEBF001EA515 /* PlexUnwatchedPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C37CA1C00CEBF001EA515 /* PlexUnwatchedPlugin.swift */; };
+		7A9C37D01C00D760001EA515 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C37CF1C00D760001EA515 /* Util.swift */; };
+		7AA1320B1C03B36900880A7F /* PlexUnwatchedNTFileTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1320A1C03B36900880A7F /* PlexUnwatchedNTFileTableCell.swift */; };
+		7AA1320E1C03B4C800880A7F /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1320D1C03B4C800880A7F /* JRSwizzle.m */; };
+		7AA132191C04F03600880A7F /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA132181C04F03600880A7F /* Loader.m */; };
+		7AA1321B1C04F0D000880A7F /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1321A1C04F0D000880A7F /* Initializer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A9C37821C00CCF1001EA515 /* PlexUnwatched.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlexUnwatched.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A9C37851C00CCF1001EA515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A9C378D1C00CE02001EA515 /* NTFSItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTFSItemProtocol.h; sourceTree = "<group>"; };
+		7A9C378E1C00CE02001EA515 /* NTIconOverlayPluginProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTIconOverlayPluginProtocol.h; sourceTree = "<group>"; };
+		7A9C378F1C00CE02001EA515 /* NTMenuPluginProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMenuPluginProtocol.h; sourceTree = "<group>"; };
+		7A9C37901C00CE02001EA515 /* NTModulePluginProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTModulePluginProtocol.h; sourceTree = "<group>"; };
+		7A9C37911C00CE02001EA515 /* NTPathFinderPluginHostProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPathFinderPluginHostProtocol.h; sourceTree = "<group>"; };
+		7A9C37921C00CE02001EA515 /* NTPluginConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPluginConstants.h; sourceTree = "<group>"; };
+		7A9C37931C00CE02001EA515 /* NTWindowThemeSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTWindowThemeSupport.h; sourceTree = "<group>"; };
+		7A9C37C91C00CEBF001EA515 /* PlexUnwatched-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlexUnwatched-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A9C37CA1C00CEBF001EA515 /* PlexUnwatchedPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlexUnwatchedPlugin.swift; sourceTree = "<group>"; };
+		7A9C37CF1C00D760001EA515 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		7AA1320A1C03B36900880A7F /* PlexUnwatchedNTFileTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlexUnwatchedNTFileTableCell.swift; sourceTree = "<group>"; };
+		7AA1320C1C03B4C800880A7F /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = PlexUnwatched/JRSwizzle.h; sourceTree = "<group>"; };
+		7AA1320D1C03B4C800880A7F /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = PlexUnwatched/JRSwizzle.m; sourceTree = "<group>"; };
+		7AA132181C04F03600880A7F /* Loader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
+		7AA1321A1C04F0D000880A7F /* Initializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A9C377F1C00CCF1001EA515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A9C37791C00CCF1001EA515 = {
+			isa = PBXGroup;
+			children = (
+				7A9C37841C00CCF1001EA515 /* PlexUnwatched */,
+				7A9C37831C00CCF1001EA515 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A9C37831C00CCF1001EA515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A9C37821C00CCF1001EA515 /* PlexUnwatched.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A9C37841C00CCF1001EA515 /* PlexUnwatched */ = {
+			isa = PBXGroup;
+			children = (
+				7A9C378B1C00CDF2001EA515 /* Other Sources */,
+				7A9C37851C00CCF1001EA515 /* Info.plist */,
+				7AA1321A1C04F0D000880A7F /* Initializer.swift */,
+				7A9C37CA1C00CEBF001EA515 /* PlexUnwatchedPlugin.swift */,
+				7AA1320A1C03B36900880A7F /* PlexUnwatchedNTFileTableCell.swift */,
+				7A9C37CF1C00D760001EA515 /* Util.swift */,
+				7AA132181C04F03600880A7F /* Loader.m */,
+				7A9C37C91C00CEBF001EA515 /* PlexUnwatched-Bridging-Header.h */,
+			);
+			path = PlexUnwatched;
+			sourceTree = "<group>";
+		};
+		7A9C378B1C00CDF2001EA515 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7A9C378C1C00CE02001EA515 /* CocoatechProtocols */,
+				7AA1320C1C03B4C800880A7F /* JRSwizzle.h */,
+				7AA1320D1C03B4C800880A7F /* JRSwizzle.m */,
+			);
+			name = "Other Sources";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7A9C378C1C00CE02001EA515 /* CocoatechProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				7A9C378D1C00CE02001EA515 /* NTFSItemProtocol.h */,
+				7A9C378E1C00CE02001EA515 /* NTIconOverlayPluginProtocol.h */,
+				7A9C378F1C00CE02001EA515 /* NTMenuPluginProtocol.h */,
+				7A9C37901C00CE02001EA515 /* NTModulePluginProtocol.h */,
+				7A9C37911C00CE02001EA515 /* NTPathFinderPluginHostProtocol.h */,
+				7A9C37921C00CE02001EA515 /* NTPluginConstants.h */,
+				7A9C37931C00CE02001EA515 /* NTWindowThemeSupport.h */,
+			);
+			path = CocoatechProtocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A9C37811C00CCF1001EA515 /* PlexUnwatched */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A9C37881C00CCF1001EA515 /* Build configuration list for PBXNativeTarget "PlexUnwatched" */;
+			buildPhases = (
+				7A9C377E1C00CCF1001EA515 /* Sources */,
+				7A9C377F1C00CCF1001EA515 /* Frameworks */,
+				7A9C37801C00CCF1001EA515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlexUnwatched;
+			productName = PlexUnwatched;
+			productReference = 7A9C37821C00CCF1001EA515 /* PlexUnwatched.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A9C377A1C00CCF1001EA515 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jacob Carlborg";
+				TargetAttributes = {
+					7A9C37811C00CCF1001EA515 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 7A9C377D1C00CCF1001EA515 /* Build configuration list for PBXProject "PlexUnwatched" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7A9C37791C00CCF1001EA515;
+			productRefGroup = 7A9C37831C00CCF1001EA515 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A9C37811C00CCF1001EA515 /* PlexUnwatched */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A9C37801C00CCF1001EA515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A9C377E1C00CCF1001EA515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA1320B1C03B36900880A7F /* PlexUnwatchedNTFileTableCell.swift in Sources */,
+				7A9C37CB1C00CEBF001EA515 /* PlexUnwatchedPlugin.swift in Sources */,
+				7AA1320E1C03B4C800880A7F /* JRSwizzle.m in Sources */,
+				7A9C37D01C00D760001EA515 /* Util.swift in Sources */,
+				7AA132191C04F03600880A7F /* Loader.m in Sources */,
+				7AA1321B1C04F0D000880A7F /* Initializer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7A9C37861C00CCF1001EA515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7A9C37871C00CCF1001EA515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7A9C37891C00CCF1001EA515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = PlexUnwatched/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.jacob-carlborg.PlexUnwatched";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PlexUnwatched/PlexUnwatched-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		7A9C378A1C00CCF1001EA515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = PlexUnwatched/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.jacob-carlborg.PlexUnwatched";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PlexUnwatched/PlexUnwatched-Bridging-Header.h";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A9C377D1C00CCF1001EA515 /* Build configuration list for PBXProject "PlexUnwatched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A9C37861C00CCF1001EA515 /* Debug */,
+				7A9C37871C00CCF1001EA515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A9C37881C00CCF1001EA515 /* Build configuration list for PBXNativeTarget "PlexUnwatched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A9C37891C00CCF1001EA515 /* Debug */,
+				7A9C378A1C00CCF1001EA515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A9C377A1C00CCF1001EA515 /* Project object */;
+}
