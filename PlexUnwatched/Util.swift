@@ -42,7 +42,7 @@ func swizzleMethod(className: String, originalSelector: Selector, withSelector: 
 
 	do
 	{
-		try cls.jr_swizzleMethod("drawHotspotInCellFrame:inView:", withMethod: "plex_unwatched_drawHotspotInCellFrame:inView:")
+		try cls.jr_swizzleMethod(originalSelector, withMethod: withSelector)
 	}
 
 	catch let error as NSError

@@ -19,6 +19,7 @@ class Initializer : NSObject
 		do
 		{
 			try swizzleMethod("NTFileTableCell", originalSelector: "drawHotspotInCellFrame:inView:", withSelector: "plex_unwatched_drawHotspotInCellFrame:inView:")
+			try swizzleMethod("ListView", originalSelector: "doubleClickAction:", withSelector: "plex_unwatched_doubleClickAction:")
 		}
 		catch let error as SwizzleError
 		{

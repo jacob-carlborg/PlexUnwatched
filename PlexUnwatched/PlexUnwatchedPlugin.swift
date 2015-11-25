@@ -10,11 +10,15 @@ import Cocoa
 
 @objc class PlexUnwatchedPlugin : NSObject, NTMenuPluginProtocol
 {
+	static var host: NTPathFinderPluginHostProtocol? = nil
+
 	static func plugin(host: NTPathFinderPluginHostProtocol!) -> AnyObject!
 	{
 		#if DEBUG
 			NSLog("PlexUnwatchedPlugin.plugin")
 		#endif
+
+		PlexUnwatchedPlugin.host = host
 
 		return PlexUnwatchedPlugin()
 	}

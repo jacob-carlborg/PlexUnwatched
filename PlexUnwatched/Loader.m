@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 #import "PlexUnwatched-Swift.h"
+#import "NTMenuPluginProtocol.h"
 
 @interface Loader : NSObject
 @end
@@ -24,3 +25,36 @@
 }
 
 @end
+
+/*@interface PlexUnwatchedPlugin : NSObject <NTMenuPluginProtocol>
+@end
+
+@implementation PlexUnwatchedPlugin
+
++ (id)plugin:(id<NTPathFinderPluginHostProtocol>)host;
+{
+	id result = [[self alloc] init];
+	NSLog(@"************************** PlexUnwatchedPlugin.plugin");
+
+	return result;
+}
+
+- (NSMenuItem*)contextualMenuItem;
+{
+	//NSLog(@"contextualMenuItem *************************");
+	return [self menuItem];
+}
+
+- (NSMenuItem*)menuItem
+{
+	return nil;
+}
+
+- (id)processItems:(NSArray*)items parameter:(id)parameter
+{
+	//NSLog(@"processItems *************************");
+	// do nothing
+	return nil;
+}
+
+@end*/

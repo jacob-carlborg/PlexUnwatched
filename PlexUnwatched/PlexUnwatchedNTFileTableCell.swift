@@ -50,3 +50,12 @@ extension NSCell
 		CGContextFillEllipseInRect(context, rect)
 	}
 }
+
+extension NSOutlineView
+{
+	func plex_unwatched_doubleClickAction(arg: AnyObject!)
+	{
+		NSLog("********************* plex_unwatched_doubleClickAction \(arg)")
+		plex_unwatched_doubleClickAction(arg)
+	}
+}
