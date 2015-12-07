@@ -138,7 +138,7 @@ struct PlexSection
 
       let optionalFiles = JSON(json)["_children"].array?.map { child in
         child["_children"].array?.first?["_children"].array?.first?["file"].string
-      }.flatMap { $0 }
+      }.flatMap { $0?.stringByRemovingPercentEncoding }
 
       if let files = optionalFiles
       {
